@@ -1,9 +1,14 @@
 Yuml.me plugin for Dokuwiki
 ---------------------------
 
-
 I've written this poor plugin for Dokuwiki because there wasn't one avaible and I wanted to use Yum.me diagrams in Dokuwiki.
 This is my first Dokuwiki-plugin. Feedback is appreciated.
 
-Currently only supports use case diagrams
-<usecase><!--Use Case Code Here--></usecase>
+Currently only supports use case and class diagrams
+
+<usecase>
+	Use case diagram code here!
+</usecase>
+<classdiagram>
+	Class diagram code here!
+</classdiagram>
