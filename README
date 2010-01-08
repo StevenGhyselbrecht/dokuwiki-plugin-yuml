@@ -1,0 +1,4 @@
+Yuml.me plugin for Dokuwiki
+
+Currently only supports use case diagrams
+<usecase><!--Use Case Code Here--></usecase>
