@@ -1,14 +1,16 @@
 Yuml.me plugin for Dokuwiki
 ---------------------------
 
-I've written this poor plugin for Dokuwiki because there wasn't one avaible and I wanted to use Yum.me diagrams in Dokuwiki.
+I've adapted this Dokuwiki plugin by StevenGhyselbrecht (https://github.com/StevenGhyselbrecht/dokuwiki-plugin-yuml) because I needed to turn my Yuml.me diagrams on their side.
+
 This is my first Dokuwiki-plugin. Feedback is appreciated.
 
-Currently only supports use case and class diagrams
+As per the original, this plugin currently only supports use case and class diagrams, activity diagrams to follow.
 
-<usecase>
+<usecase [plain|nofunky|scruffy[;]][dir:[td|lr][;]][scale:75]>
 	Use case diagram code here!
 </usecase>
-<classdiagram>
+
+<classdiagram [plain|nofunky|scruffy[;]][dir:[td|lr][;]][scale:75]>
 	Class diagram code here!
 </classdiagram>

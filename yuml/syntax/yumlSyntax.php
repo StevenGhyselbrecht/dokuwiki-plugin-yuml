@@ -8,17 +8,6 @@ require_once("yumlSyntax.php");
 
 class YumlSyntax extends DokuWiki_Syntax_Plugin {
 
-    function getInfo() {
-        return array(
-        'author' => 'Steven Ghyselbrecht',
-        'email'  => 'steven.ghyselbrecht@gmail.com',
-        'date'   => '2010-01-08',
-        'name'   => 'Yuml.me parser',
-        'desc'   => 'Parses Yuml.me code and display\'s the image!',
-        'url'    => 'http://www.dokuwiki.org/wiki:plugins',
-        );
-    }
-
     /**
      * Get the type of syntax this plugin defines.
      *
@@ -80,9 +69,12 @@ class YumlSyntax extends DokuWiki_Syntax_Plugin {
 		// Not implemented
     }
 	
-	function getYumlIMG($type, $uml_code){
+	function getYumlIMG($type, $uml_code, $style = null){
+		if($style == null) {
+			$style = "plain";
+		}
 		$uml_code = preg_replace(array("/\n/", "/,,/"), array(", ",   ","   ),	trim($uml_code));
-		$output = "<img src=\"http://yUML.me/diagram/scruffy/" . $type . "/";
+		$output = "<img src=\"http://yUML.me/diagram/" . trim($style) . "/" . $type . "/";
 		return $output . htmlspecialchars($uml_code)."\"/>";
 	}
 }
