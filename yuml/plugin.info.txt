@@ -1,0 +1,7 @@
+base   yuml
+author David Lumm
+email  david.lumm@twinklebob.co.uk
+date   2011-11-09
+name   Yuml.me parser
+desc   Parses Yuml.me code and displays the image!
+url    https://github.com/twinklebob/dokuwiki-plugin-yuml
