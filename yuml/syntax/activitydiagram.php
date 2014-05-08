@@ -18,7 +18,7 @@ class syntax_plugin_yuml_activitydiagram extends YumlSyntax {
 		
 			$style = $result[1];
 			$match = $result[2];
-			
+		
 			return array($state, $match, $style);
         }
         return array();
