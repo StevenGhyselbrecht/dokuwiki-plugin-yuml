@@ -5,7 +5,7 @@ I've adapted this Dokuwiki plugin by StevenGhyselbrecht (https://github.com/Stev
 
 This is my first Dokuwiki-plugin. Feedback is appreciated.
 
-As per the original, this plugin currently only supports use case and class diagrams, activity diagrams to follow.
+As per the original, this plugin currently only supports use case, class diagrams and activity diagrams.
 
 <usecase [plain|nofunky|scruffy[;]][dir:[td|lr][;]][scale:75]>
 	Use case diagram code here!
@@ -14,3 +14,7 @@ As per the original, this plugin currently only supports use case and class diag
 <classdiagram [plain|nofunky|scruffy[;]][dir:[td|lr][;]][scale:75]>
 	Class diagram code here!
 </classdiagram>
+
+<activitydiagram [plain|nofunky|scruffy[;]][dir:[td|lr][;]][scale:75]>
+	Activity diagram code here!
+</activitydiagram>
