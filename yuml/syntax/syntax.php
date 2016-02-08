@@ -3,10 +3,10 @@
 if(!defined('DOKU_INC')) define('DOKU_INC',realpath(dirname(__FILE__).'/../../').'/');
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 require_once(DOKU_PLUGIN.'syntax.php');
-require_once("yumlSyntax.php");
+require_once("syntax.php");
 
 
-class YumlSyntax extends DokuWiki_Syntax_Plugin {
+class syntax_plugin_yuml extends DokuWiki_Syntax_Plugin {
 
     /**
      * Get the type of syntax this plugin defines.

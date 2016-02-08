@@ -1,8 +1,8 @@
 <?php
 
-require_once('yumlSyntax.php');
+require_once('syntax.php');
 
-class syntax_plugin_yuml_usecase extends YumlSyntax {
+class syntax_plugin_yuml_usecase extends syntax_plugin_yuml {
 
     function connectTo($mode) {
         $this->Lexer->addSpecialPattern('<usecase.*?>.*?</usecase>',$mode,'plugin_yuml_usecase');

@@ -1,8 +1,8 @@
 <?php
 
-require_once("yumlSyntax.php");
+require_once("syntax.php");
 
-class syntax_plugin_yuml_classdiagram extends YumlSyntax {
+class syntax_plugin_yuml_classdiagram extends syntax_plugin_yuml {
 
     function connectTo($mode) {
         $this->Lexer->addSpecialPattern('<classdiagram.*?>.*?</classdiagram>',$mode,'plugin_yuml_classdiagram');
